@@ -50,8 +50,8 @@ test.describe('User management API for existing users', () => {
         expect(responseBody.id).toBeDefined();
         const deleteResponse = await request.delete(`${baseURL}`+ '/' + responseBody.id);
         expect(deleteResponse.status()).toBe(200);
-        const deleteResponseAgain = await request.delete(`${baseURL}`+ '/' + responseBody.id);
-        expect(deleteResponseAgain.status()).toBe(404);
+        const deleteAgainResponse = await request.delete(`${baseURL}`+ '/' + responseBody.id);
+        expect(deleteAgainResponse.status()).toBe(404);
     });
 
 
