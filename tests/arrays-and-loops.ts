@@ -86,11 +86,11 @@ for (let i=0; i<evenArray.length; i++) {
 console.log("Number of even numbers in an array is", evenNumber);
 
 //New array from positive numbers
-let array:number[] = [-4,60,-5,43,24];
+let anArray:number[] = [-4,60,-5,43,24];
 let positiveArray:number[] = [];
-for (let i=0; i<array.length; i++) {
-    if (array[i] > 0) {
-        positiveArray.push(array[i]);
+for (let i=0; i<anArray.length; i++) {
+    if (anArray[i] > 0) {
+        positiveArray.push(anArray[i]);
     }
 }
 console.log("An array of positive numbers is",positiveArray);
